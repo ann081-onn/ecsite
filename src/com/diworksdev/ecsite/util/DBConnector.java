@@ -4,7 +4,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 public class DBConnector {
 	private static String driverName = "com.mysql.jdbc.Driver";
-	private static String url = "jdbc:mysql://localhost/ecsite";
+	private static String url =
+		    "jdbc:mysql://localhost/ecsite?useUnicode=true&characterEncoding=UTF-8";
 	private static String user = "root";
 	private static String password = "";
 	public Connection getConnection() {
